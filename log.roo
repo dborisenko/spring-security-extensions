@@ -14,3 +14,17 @@ perform package
 // Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-05-15 21:15:20
 perform eclipse
 perform package
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-05-15 21:36:56
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-05-15 22:52:18
+perform package
+perform package
+perform package
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log closed at 2011-05-15 23:58:36
+// Spring Roo 1.1.2.RELEASE [rev fbc33bb] log opened at 2011-05-16 18:52:43
+// [failed] persistence setup --database H2_IN_MEMORY --provider HIBERNATE 
+// [failed] persistence setup --database H2_IN_MEMORY --provider HIBERNATE 
+// [failed] persistence setup --database MYSQL --provider HIBERNATE 
+// [failed] persistence setup --database H2_IN_MEMORY --provider HIBERNATE 
+perform eclipse
+perform tests
+perform eclipse

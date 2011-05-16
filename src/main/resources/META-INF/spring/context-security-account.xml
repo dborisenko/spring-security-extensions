@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<beans:bean id="accountRepository"
+			class="org.springframework.security.account.repository.OrmAccountRepositoryImpl">
+	</beans:bean>
+	
+	<beans:bean id="accountService"
+			class="org.springframework.security.account.service.AccountServiceImpl">
+		<beans:property name="accountRepository" ref="accountRepository" />
+		<beans:property name="creationAuthorities" >
+			<beans:list>
+				<beans:value type="java.lang.String">ROLE_USER</beans:value>
+			</beans:list>
+		</beans:property>
+		<beans:property name="creationUserEnable" value="true" />
+		<beans:property name="userDetailsManager" ref="userDetailsManager" />
+	</beans:bean>
+	
+</beans:beans>
